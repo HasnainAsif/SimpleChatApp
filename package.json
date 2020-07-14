@@ -1,0 +1,22 @@
+{
+  "name": "simplechatmern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node Server",
+    "server": "nodemon Server",
+    "client": "npm start --prefix client",
+    "chat": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.24",
+    "nodemon": "^2.0.4",
+    "socket.io": "^2.3.0"
+  }
+}
